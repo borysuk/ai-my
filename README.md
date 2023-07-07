@@ -1,2 +1,2 @@
 # ai-my
-ai-my
+AI-Playbook
