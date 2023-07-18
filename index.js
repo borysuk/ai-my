@@ -7,3 +7,4 @@ var slugify = require('slugify');
 var cookieParser = require('cookie-parser');
 // var cookieSession = require('cookie-session');
 var bodyParser = require('body-parser');
+var session = require('express-session');
