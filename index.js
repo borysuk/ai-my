@@ -13,3 +13,4 @@ var util = require('util');
 var mime = require('mime');
 var compression = require('compression');
 var compressible = require('compressible');
+var cache = require('apicache').middleware;
