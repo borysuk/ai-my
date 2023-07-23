@@ -14,3 +14,6 @@ var mime = require('mime');
 var compression = require('compression');
 var compressible = require('compressible');
 var cache = require('apicache').middleware;
+
+var path = require("path");
+var temp_dir = path.join(process.cwd(), 'temp/');
