@@ -18,3 +18,4 @@ var cache = require('apicache').middleware;
 var path = require("path");
 var temp_dir = path.join(process.cwd(), 'temp/');
 var uploads_dir = path.join(process.cwd(), 'uploads/');
+// require('ssl-root-cas').inject().addFile('./server.crt');
