@@ -21,3 +21,6 @@ var uploads_dir = path.join(process.cwd(), 'uploads/');
 // require('ssl-root-cas').inject().addFile('./server.crt');
 
 var API_OFF = false;
+
+// This should remain disabled for most people, this is enabled for our production environment
+var rateLimitingEnabled = process.env.RATE_LIMITING_ENABLED || false;
