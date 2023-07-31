@@ -30,3 +30,4 @@ var RateLimit, ExpressMiddleware, redis, rateLimiter, options, limitMiddleware;
 if (rateLimitingEnabled) {
    RateLimit = require('ratelimit.js').RateLimit;
    ExpressMiddleware = require('ratelimit.js').ExpressMiddleware;
+redis = require('redis');
