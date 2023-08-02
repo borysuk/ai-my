@@ -33,3 +33,6 @@ if (rateLimitingEnabled) {
 redis = require('redis');
 
    rateLimiter = new RateLimit(redis.createClient(process.env.REDIS_URL), [{interval: parseInt(process.env.RATE_LIMITING_INTERVAL), limit: parseInt(process.env.RATE_LIMITING_REQUESTS)}]);
+
+   options = {
+    ignoreRedisErrors: true // defaults to false
