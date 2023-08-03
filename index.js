@@ -36,3 +36,6 @@ redis = require('redis');
 
    options = {
     ignoreRedisErrors: true // defaults to false
+  };
+  limitMiddleware = new ExpressMiddleware(rateLimiter, options);
+}
