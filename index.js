@@ -39,3 +39,5 @@ redis = require('redis');
   };
   limitMiddleware = new ExpressMiddleware(rateLimiter, options);
 }
+
+if (!fs.existsSync(temp_dir)) {
