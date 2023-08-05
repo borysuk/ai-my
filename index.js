@@ -41,3 +41,5 @@ redis = require('redis');
 }
 
 if (!fs.existsSync(temp_dir)) {
+    fs.mkdirSync(temp_dir);
+}
