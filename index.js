@@ -43,3 +43,6 @@ redis = require('redis');
 if (!fs.existsSync(temp_dir)) {
     fs.mkdirSync(temp_dir);
 }
+
+if (!fs.existsSync(uploads_dir)) {
+    fs.mkdirSync(uploads_dir);
