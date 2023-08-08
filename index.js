@@ -49,3 +49,6 @@ if (!fs.existsSync(uploads_dir)) {
 }
 
 var storage = multer.memoryStorage();
+var upload = multer({ storage: storage });
+
+//local modules (JS files)
