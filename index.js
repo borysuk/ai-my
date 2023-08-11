@@ -53,3 +53,4 @@ var upload = multer({ storage: storage });
 
 //local modules (JS files)
 // var utils = require('./utils');
+var SentimentAnalysis = require('./lib/sentiment-analysis.js');
