@@ -56,3 +56,4 @@ var upload = multer({ storage: storage });
 var SentimentAnalysis = require('./lib/sentiment-analysis.js');
 var EntityAnalysis = require('./lib/entity-analysis.js');
 var LanguageAnalysis = require('./lib/language-analysis.js');
+var ImageAnalysis = require('./lib/image-analysis.js');
