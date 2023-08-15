@@ -57,3 +57,6 @@ var SentimentAnalysis = require('./lib/sentiment-analysis.js');
 var EntityAnalysis = require('./lib/entity-analysis.js');
 var LanguageAnalysis = require('./lib/language-analysis.js');
 var ImageAnalysis = require('./lib/image-analysis.js');
+var NXAPIPacks = require('./lib/api-connector/api-connector.js');
+
+createEJSTemplateDataDictionary = function (req, res) {
