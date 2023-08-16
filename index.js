@@ -60,3 +60,4 @@ var ImageAnalysis = require('./lib/image-analysis.js');
 var NXAPIPacks = require('./lib/api-connector/api-connector.js');
 
 createEJSTemplateDataDictionary = function (req, res) {
+ // Set a body class hook to append to <body>
