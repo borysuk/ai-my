@@ -65,3 +65,4 @@ createEJSTemplateDataDictionary = function (req, res) {
   if(req.originalUrl === '/') {
   localBodyClass = 'home';
   } else {
+  localBodyClass = slugify(req.originalUrl.replace(/\//g, ' '));
