@@ -69,3 +69,6 @@ createEJSTemplateDataDictionary = function (req, res) {
  }
   return { session: req.session, activeRoute: req.activeRoute, recaptchaSiteKey: process.env.RECAPTCHA_SITE_KEY, bodyClass: localBodyClass };
 };
+
+//storage
+// var session = require('express-session');
