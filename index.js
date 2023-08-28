@@ -72,3 +72,4 @@ createEJSTemplateDataDictionary = function (req, res) {
 
 //storage
 // var session = require('express-session');
+// var RedisStore = require('connect-redis')(session);
