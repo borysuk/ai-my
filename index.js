@@ -75,3 +75,4 @@ createEJSTemplateDataDictionary = function (req, res) {
 // var RedisStore = require('connect-redis')(session);
 
 var app = express();
+// var privateKey  = fs.readFileSync('./key.pem', 'utf8');
