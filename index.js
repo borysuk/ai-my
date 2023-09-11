@@ -86,3 +86,4 @@ var cookiesSecretKey = (process.env.COOKIES_SECRET_KEY || 'cookiesSecret');
 app.use(cookieParser(cookiesSecretKey));
 
 //for now use cookie session (in-memory)
+app.use(session({  secret: cookiesSecretKey }));
