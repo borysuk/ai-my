@@ -90,3 +90,5 @@ app.use(session({  secret: cookiesSecretKey }));
 
 //
 // app.use(session({
+//     store: new RedisStore(options),
+//     secret: 'secretdata'
