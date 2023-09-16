@@ -95,3 +95,8 @@ app.use(session({  secret: cookiesSecretKey }));
 // }));
 
 app.use(bodyParser.urlencoded({ limit:'2mb', extended: true })); // for parsing
+
+app.use(express.static(__dirname + '/public'));
+
+
+// views is directory for all template files
