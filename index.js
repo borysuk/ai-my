@@ -105,3 +105,6 @@ app.set('view engine', 'ejs');
 
 
 app.use(compression());
+
+//add current route to the request so templates can extract it
+app.use(function(req, res, next) {
