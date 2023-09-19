@@ -108,3 +108,8 @@ app.use(compression());
 
 //add current route to the request so templates can extract it
 app.use(function(req, res, next) {
+ req.activeRoute = req.path.split('/')[1] // [0] will be empty since routes start with '/'
+    next();
+});
+
+app.use(function (req, res, next) {
