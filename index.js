@@ -113,3 +113,5 @@ app.use(function(req, res, next) {
 });
 
 app.use(function (req, res, next) {
+  if (req.originalUrl.substring(0,4) === '/api' && API_OFF) {
+    return {success: false};
