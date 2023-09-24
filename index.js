@@ -123,3 +123,8 @@ app.use(function (req, res, next) {
 
 if (limitMiddleware) {
   app.use('/api', limitMiddleware.middleware(function(req, res, next) {
+  res.status(429).json({message: 'rate limit exceeded'});
+  }));
+}
+
+var markdownCache = Object.create(null);
