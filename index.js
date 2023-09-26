@@ -131,3 +131,6 @@ var markdownCache = Object.create(null);
 var SectionPageProcessor = require('./lib/section-page-processor.js');
 
 //docs route - use markdown files as content source for pages
+app.get('/docs/*', function(req, res) {
+
+    var dataDict = createEJSTemplateDataDictionary(req, res);
