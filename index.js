@@ -134,3 +134,4 @@ var SectionPageProcessor = require('./lib/section-page-processor.js');
 app.get('/docs/*', function(req, res) {
 
     var dataDict = createEJSTemplateDataDictionary(req, res);
+ SectionPageProcessor.processMarkdownPage(dataDict, req, res, markdownCache);
