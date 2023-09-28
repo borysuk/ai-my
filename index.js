@@ -135,3 +135,8 @@ app.get('/docs/*', function(req, res) {
 
     var dataDict = createEJSTemplateDataDictionary(req, res);
  SectionPageProcessor.processMarkdownPage(dataDict, req, res, markdownCache);
+
+});
+
+app.get('/contact', function(req, res) {
+  res.render('pages/contact', createEJSTemplateDataDictionary(req, res));
