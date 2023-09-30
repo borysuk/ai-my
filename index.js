@@ -144,3 +144,6 @@ app.get('/contact', function(req, res) {
 
 app.get('/', function(req, res) {
   res.render('pages/index', createEJSTemplateDataDictionary(req, res));
+});
+
+var apiAddCompletion = function(apiPack, success, message) {
