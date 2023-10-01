@@ -147,3 +147,7 @@ app.get('/', function(req, res) {
 });
 
 var apiAddCompletion = function(apiPack, success, message) {
+   console.log((success?"OK: ":"ERROR: ")+message);
+}
+
+NXAPIPacks.connector.setAPIRoot('/api');
