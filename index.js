@@ -151,3 +151,7 @@ var apiAddCompletion = function(apiPack, success, message) {
 }
 
 NXAPIPacks.connector.setAPIRoot('/api');
+NXAPIPacks.connector.setApp(app);
+
+//on examples, if displayText is not included the value will be used
+/*
