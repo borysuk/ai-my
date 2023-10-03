@@ -155,3 +155,4 @@ NXAPIPacks.connector.setApp(app);
 
 //on examples, if displayText is not included the value will be used
 /*
+info.testSamples = samples;
