@@ -163,3 +163,4 @@ info.testSamples = samples;
 }
 
 function loadApi(pathToAPIJSONFile) {
+  console.log("Loading api info from "+pathToAPIJSONFile);
