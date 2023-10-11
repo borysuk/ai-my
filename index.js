@@ -177,3 +177,5 @@ function loadAllAPIs(rootPath) {
  var folderPath = path.join(process.cwd(), rootPath);
 
   var files = fs.readdirSync(folderPath);
+  var samplesPath = path.join(process.cwd(), parameters.topLevelFolder,  serviceId, serviceId+"_samples.json");
+    var samples = require(samplesPath);
