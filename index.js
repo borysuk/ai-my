@@ -182,3 +182,10 @@ function loadAllAPIs(rootPath) {
 
     if (samples != undefined) {
       info.testSamples = samples;
+ }
+  }
+
+  return info;
+}
+
+function loadApi(pathToAPIJSONFile) {
