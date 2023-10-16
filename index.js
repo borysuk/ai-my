@@ -191,3 +191,5 @@ function loadAllAPIs(rootPath) {
 function loadApi(pathToAPIJSONFile) {
  console.log("Loading api info from "+pathToAPIJSONFile);
   var apiInfo = require(pathToAPIJSONFile);
+  if (apiInfo != undefined) {
+    NXAPIPacks.connector.addAPI(apiInfo);
