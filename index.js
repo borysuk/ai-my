@@ -196,3 +196,7 @@ function loadApi(pathToAPIJSONFile) {
   }
   else {
     console.log("Error loading API info from "+pathToAPIJSONFile);
+ }
+}
+
+function loadAllAPIs(rootPath) {
