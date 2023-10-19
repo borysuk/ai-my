@@ -200,3 +200,4 @@ function loadApi(pathToAPIJSONFile) {
 }
 
 function loadAllAPIs(rootPath) {
+var folderPath = path.join(process.cwd(), rootPath);
