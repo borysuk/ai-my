@@ -201,3 +201,6 @@ function loadApi(pathToAPIJSONFile) {
 
 function loadAllAPIs(rootPath) {
 var folderPath = path.join(process.cwd(), rootPath);
+
+  var files = fs.readdirSync(folderPath);
+  files.forEach(file => {
