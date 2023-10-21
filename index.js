@@ -204,3 +204,6 @@ var folderPath = path.join(process.cwd(), rootPath);
 
   var files = fs.readdirSync(folderPath);
   files.forEach(file => {
+  // console.log(file);
+
+    var filePath = path.join(folderPath, file);
