@@ -207,3 +207,9 @@ var folderPath = path.join(process.cwd(), rootPath);
   // console.log(file);
 
     var filePath = path.join(folderPath, file);
+ loadApi(filePath);
+  });
+
+}
+
+loadAllAPIs('public/data/services/apis');
