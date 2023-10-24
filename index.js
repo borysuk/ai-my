@@ -215,3 +215,5 @@ var folderPath = path.join(process.cwd(), rootPath);
 loadAllAPIs('public/data/services/apis');
 
 var languageAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'language-analysis', topLevelFolder: 'public/data/services', loadSamples: true});
+
+var languageTranslationCommonServiceInfo = loadServiceInfo({serviceId: 'language-translation', topLevelFolder: 'public/data/services', loadSamples: true});
