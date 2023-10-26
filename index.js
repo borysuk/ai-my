@@ -219,3 +219,5 @@ var languageAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'language-an
 var languageTranslationCommonServiceInfo = loadServiceInfo({serviceId: 'language-translation', topLevelFolder: 'public/data/services', loadSamples: true});
 
 var entityAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'entity-analysis', topLevelFolder: 'public/data/services', loadSamples: true});
+
+var sentimentAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'sentiment-analysis', topLevelFolder: 'public/data/services', loadSamples: true});
