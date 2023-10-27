@@ -221,3 +221,6 @@ var languageTranslationCommonServiceInfo = loadServiceInfo({serviceId: 'language
 var entityAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'entity-analysis', topLevelFolder: 'public/data/services', loadSamples: true});
 
 var sentimentAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'sentiment-analysis', topLevelFolder: 'public/data/services', loadSamples: true});
+var imageAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'image-analysis', topLevelFolder: 'public/data/services', loadSamples: true});
+
+NXAPIPacks.connector
