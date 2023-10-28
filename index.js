@@ -224,3 +224,9 @@ var sentimentAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'sentiment-
 var imageAnalysisCommonServiceInfo = loadServiceInfo({serviceId: 'image-analysis', topLevelFolder: 'public/data/services', loadSamples: true});
 
 NXAPIPacks.connector
+ .apiForId("js-sentimentjs")
+        .addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.sentimentJSAPIPack, apiAddCompletion);
+
+NXAPIPacks.connector
+    .apiForId("js-sentimental")
+        .addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.sentimentalJSAPIPack, apiAddCompletion);
