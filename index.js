@@ -230,3 +230,7 @@ NXAPIPacks.connector
 NXAPIPacks.connector
     .apiForId("js-sentimental")
         .addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.sentimentalJSAPIPack, apiAddCompletion);
+
+var ibmAPI = NXAPIPacks.connector.apiForId("ibm-alchemy");
+
+ibmAPI.addService(entityAnalysisCommonServiceInfo, EntityAnalysis.alchemyEntityAPIPack, apiAddCompletion);
