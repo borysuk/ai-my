@@ -234,3 +234,4 @@ NXAPIPacks.connector
 var ibmAPI = NXAPIPacks.connector.apiForId("ibm-alchemy");
 
 ibmAPI.addService(entityAnalysisCommonServiceInfo, EntityAnalysis.alchemyEntityAPIPack, apiAddCompletion);
+ibmAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.alchemySentimentAPIPack, apiAddCompletion);
