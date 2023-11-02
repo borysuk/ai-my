@@ -235,3 +235,6 @@ var ibmAPI = NXAPIPacks.connector.apiForId("ibm-alchemy");
 
 ibmAPI.addService(entityAnalysisCommonServiceInfo, EntityAnalysis.alchemyEntityAPIPack, apiAddCompletion);
 ibmAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.alchemySentimentAPIPack, apiAddCompletion);
+ibmAPI.addService(languageAnalysisCommonServiceInfo, LanguageAnalysis.alchemyLangAnalysisAPIPack, apiAddCompletion);
+
+var ibmWatsonAPI = NXAPIPacks.connector.apiForId("ibm-watson");
