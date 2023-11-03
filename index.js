@@ -238,3 +238,5 @@ ibmAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.alchemyS
 ibmAPI.addService(languageAnalysisCommonServiceInfo, LanguageAnalysis.alchemyLangAnalysisAPIPack, apiAddCompletion);
 
 var ibmWatsonAPI = NXAPIPacks.connector.apiForId("ibm-watson");
+
+ibmWatsonAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.ibmToneAnalysisAPIPack, apiAddCompletion);
