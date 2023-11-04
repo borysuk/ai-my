@@ -240,3 +240,7 @@ ibmAPI.addService(languageAnalysisCommonServiceInfo, LanguageAnalysis.alchemyLan
 var ibmWatsonAPI = NXAPIPacks.connector.apiForId("ibm-watson");
 
 ibmWatsonAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.ibmToneAnalysisAPIPack, apiAddCompletion);
+
+var googleAPI = NXAPIPacks.connector.apiForId("google-cloud");
+
+googleAPI.addService(entityAnalysisCommonServiceInfo, EntityAnalysis.googleEntityAnalysisAPIPack, apiAddCompletion);
