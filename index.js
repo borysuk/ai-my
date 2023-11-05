@@ -244,3 +244,4 @@ ibmWatsonAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.ib
 var googleAPI = NXAPIPacks.connector.apiForId("google-cloud");
 
 googleAPI.addService(entityAnalysisCommonServiceInfo, EntityAnalysis.googleEntityAnalysisAPIPack, apiAddCompletion);
+googleAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.googleSentimentAnalysisAPIPack, apiAddCompletion);
