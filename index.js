@@ -248,3 +248,7 @@ googleAPI.addService(sentimentAnalysisCommonServiceInfo, SentimentAnalysis.googl
 googleAPI.addService(languageAnalysisCommonServiceInfo, LanguageAnalysis.googleLangAnalysisAPIPack, apiAddCompletion);
 
 googleAPI.addService(imageAnalysisCommonServiceInfo, ImageAnalysis.googleImageAnalysisAPIPack, apiAddCompletion);
+
+googleAPI.addService(languageTranslationCommonServiceInfo, LanguageAnalysis.googleLangTranslationAPIPack, apiAddCompletion);
+
+var amazonAPI = NXAPIPacks.connector.apiForId("amazon-ai");
