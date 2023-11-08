@@ -252,3 +252,4 @@ googleAPI.addService(imageAnalysisCommonServiceInfo, ImageAnalysis.googleImageAn
 googleAPI.addService(languageTranslationCommonServiceInfo, LanguageAnalysis.googleLangTranslationAPIPack, apiAddCompletion);
 
 var amazonAPI = NXAPIPacks.connector.apiForId("amazon-ai");
+amazonAPI.addService(imageAnalysisCommonServiceInfo, ImageAnalysis.amazonImageAnalysisAPIPack, apiAddCompletion);
