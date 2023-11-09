@@ -253,3 +253,6 @@ googleAPI.addService(languageTranslationCommonServiceInfo, LanguageAnalysis.goog
 
 var amazonAPI = NXAPIPacks.connector.apiForId("amazon-ai");
 amazonAPI.addService(imageAnalysisCommonServiceInfo, ImageAnalysis.amazonImageAnalysisAPIPack, apiAddCompletion);
+
+var clarifaiAPI = NXAPIPacks.connector.apiForId("clarifai");
+clarifaiAPI.addService(imageAnalysisCommonServiceInfo, ImageAnalysis.clarifaiImageAnalysisAPIPack, apiAddCompletion);
