@@ -26,3 +26,6 @@ var API_OFF = false;
 var rateLimitingEnabled = process.env.RATE_LIMITING_ENABLED || false;
 
 var RateLimit, ExpressMiddleware, redis, rateLimiter, options, limitMiddleware;
+
+if (rateLimitingEnabled) {
+   RateLimit = require('ratelimit.js').RateLimit;
