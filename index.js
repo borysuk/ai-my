@@ -29,3 +29,7 @@ var RateLimit, ExpressMiddleware, redis, rateLimiter, options, limitMiddleware;
 
 if (rateLimitingEnabled) {
    RateLimit = require('ratelimit.js').RateLimit;
+ExpressMiddleware = require('ratelimit.js').ExpressMiddleware;
+   redis = require('redis');
+
+   rateLimiter = new RateLimit(redis.createClient(process.env.REDIS_URL), [{interval: parseInt(process.env.RATE_LIMITING_INTERVAL), limit: parseInt(process.env.RATE_LIMITING_REQUESTS)}]);
