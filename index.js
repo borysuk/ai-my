@@ -36,3 +36,8 @@ ExpressMiddleware = require('ratelimit.js').ExpressMiddleware;
 
    options = {
     ignoreRedisErrors: true // defaults to false
+  };
+  limitMiddleware = new ExpressMiddleware(rateLimiter, options);
+}
+
+if (!fs.existsSync(temp_dir)) {
