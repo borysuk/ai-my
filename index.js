@@ -41,3 +41,7 @@ ExpressMiddleware = require('ratelimit.js').ExpressMiddleware;
 }
 
 if (!fs.existsSync(temp_dir)) {
+  fs.mkdirSync(temp_dir);
+}
+
+if (!fs.existsSync(uploads_dir)) 
