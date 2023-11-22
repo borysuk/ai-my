@@ -45,3 +45,7 @@ if (!fs.existsSync(temp_dir)) {
 }
 
 if (!fs.existsSync(uploads_dir)) 
+ fs.mkdirSync(uploads_dir);
+}
+
+var storage = multer.memoryStorage();
