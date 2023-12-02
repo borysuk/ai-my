@@ -66,3 +66,5 @@ createEJSTemplateDataDictionary = function (req, res) {
  localBodyClass = 'home';
   } else {
     localBodyClass = slugify(req.originalUrl.replace(/\//g, ' '));
+  }
+  return { session: req.session, activeRoute: req.activeRoute, recaptchaSiteKey: process.env.RECAPTCHA_SITE_KEY, bodyClass: localBodyClass };
