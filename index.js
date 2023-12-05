@@ -76,3 +76,9 @@ createEJSTemplateDataDictionary = function (req, res) {
 
 var app = express();
 // var privateKey  = fs.readFileSync('./key.pem', 'utf8');
+// var certificate = fs.readFileSync('./server.crt', 'utf8');
+// var credentials = {key: privateKey, cert: certificate};
+
+app.set('port', (process.env.PORT || 5000));
+
+var cookiesSecretKey = (process.env.COOKIES_SECRET_KEY || 'cookiesSecret');
