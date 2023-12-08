@@ -91,3 +91,7 @@ app.use(session({  secret: cookiesSecretKey }));
 //
 // app.use(session({
 //     store: new RedisStore(options),
+//     secret: 'secretdata'
+// }));
+
+app.use(bodyParser.urlencoded({ limit:'2mb', extended: true })); // for parsing
